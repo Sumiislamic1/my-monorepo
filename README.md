@@ -85,10 +85,17 @@ my-monorepo1/
 ### Frontend — `apps/frontend`
 - **Runtime:** React 18 / Vite
 - **Port:** `5173`
-- Type symptoms or click from the suggestion list
-- Symptom chips with add/remove support
-- Confidence progress bars with color-coded severity
-- Matched symptoms highlighted per result
+
+| Feature | Description |
+|---------|-------------|
+| Symptom input | Type and press Enter or `,` to add chips; Backspace removes the last chip |
+| Quick select | Click any symptom tag to add/remove it instantly |
+| Autocomplete | Suggestions appear as you type, sourced from `/diseases` |
+| Service status | Live Online / Offline indicator on load via `/health` |
+| Results | Confidence progress bars, color-coded severity badges, matched symptom chips |
+| History tab | Last 10 checks stored in `localStorage`, persists across page refreshes |
+| Re-run | Load any past check's symptoms back into the checker in one click |
+| Clear | Reset symptoms and results instantly |
 
 ---
 
